@@ -13,15 +13,18 @@
 
 @implementation SDSelectionView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame andParentView: (SDMainView *)v
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.mainView = v;
         self.backgroundColor = [UIColor grayColor];
+        self.faceViews = [[NSMutableArray alloc] initWithCapacity:4];
         [self placeFaceViewWithName:@"beth" atPos:0];
         [self placeFaceViewWithName:@"lisa" atPos:1];
         [self placeFaceViewWithName:@"marisa" atPos:2];
         [self placeFaceViewWithName:@"peter" atPos:3];
+        self.userInteractionEnabled = NO;
     }
     return self;
 }
@@ -36,6 +39,7 @@
 	faceView.center = CGPointMake( selViewSize.width / 2.0,
                                   hPerPos * (pos + 0.5) );
     [self addSubview:faceView];
+    [self.faceViews addObject:faceView];
 }
 
 /*

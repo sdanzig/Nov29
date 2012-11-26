@@ -8,12 +8,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Nov29/SDFaceView.m"
-         timestampString = "375599130.07855"
+         timestampString = "375603480.824918"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "22"
-         endingLineNumber = "22"
+         startingLineNumber = "39"
+         endingLineNumber = "39"
          landmarkName = "-initWithView:andName:atPos:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Nov29/SDMainView.m"
+         timestampString = "375605428.552763"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "43"
+         endingLineNumber = "43"
+         landmarkName = "-touchesBegan:withEvent:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

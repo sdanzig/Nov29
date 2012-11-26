@@ -11,10 +11,7 @@
 @class SDDrawingView;
 @class SDSelectionView;
 
-@interface SDAppDelegate : UIResponder <UIApplicationDelegate> {
-    SDDrawingView *drawView;
-    SDSelectionView *selectionView;
-}
+@interface SDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

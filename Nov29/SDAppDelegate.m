@@ -7,8 +7,7 @@
 //
 
 #import "SDAppDelegate.h"
-#import "SDDrawingView.h"
-#import "SDSelectionView.h"
+#import "SDMainView.h"
 
 @implementation SDAppDelegate
 
@@ -19,17 +18,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     UIScreen *screen = [UIScreen mainScreen];
-    CGRect drawFrame = screen.bounds;
-    drawFrame.size.width = drawFrame.size.width * 0.8;
-    NSLog(@"drawFrame width = %f",drawFrame.size.width);
-    CGRect selectionFrame = screen.bounds;
-    selectionFrame.size.width = selectionFrame.size.width * 0.2;
-    NSLog(@"selectionFrame width = %f",selectionFrame.size.width);
-    selectionFrame.origin.x = drawFrame.size.width;
-    drawView = [[SDDrawingView alloc] initWithFrame:drawFrame];
-    selectionView = [[SDSelectionView alloc] initWithFrame:selectionFrame];
-    [self.window addSubview:drawView];
-    [self.window addSubview:selectionView];
+    CGRect frame = screen.bounds;
+    SDMainView *mainView = [[SDMainView alloc] initWithFrame:frame];
+    [self.window addSubview:mainView];
     return YES;
 }
 

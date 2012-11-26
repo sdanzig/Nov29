@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F463BB1E166332F300BA8F45 /* SDMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F463BB1D166332F300BA8F45 /* SDMainView.m */; };
 		F4CB740116630E000096B7F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CB740016630E000096B7F7 /* UIKit.framework */; };
 		F4CB740316630E000096B7F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CB740216630E000096B7F7 /* Foundation.framework */; };
 		F4CB740516630E000096B7F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CB740416630E000096B7F7 /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F463BB1C166332F300BA8F45 /* SDMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMainView.h; sourceTree = "<group>"; };
+		F463BB1D166332F300BA8F45 /* SDMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMainView.m; sourceTree = "<group>"; };
 		F4CB73FC16630E000096B7F7 /* Nov29.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nov29.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CB740016630E000096B7F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F4CB740216630E000096B7F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 				F4CB742A166315A00096B7F7 /* SDSelectionView.m */,
 				F4CB742C16631BEB0096B7F7 /* SDFaceView.h */,
 				F4CB742D16631BEB0096B7F7 /* SDFaceView.m */,
+				F463BB1C166332F300BA8F45 /* SDMainView.h */,
+				F463BB1D166332F300BA8F45 /* SDMainView.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				F4CB74281663158B0096B7F7 /* SDDrawingView.m in Sources */,
 				F4CB742B166315A10096B7F7 /* SDSelectionView.m in Sources */,
 				F4CB742E16631BEB0096B7F7 /* SDFaceView.m in Sources */,
+				F463BB1E166332F300BA8F45 /* SDMainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +323,7 @@
 				F4CB741C16630E010096B7F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

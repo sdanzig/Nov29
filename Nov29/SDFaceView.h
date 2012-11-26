@@ -11,10 +11,12 @@
 
 @interface SDFaceView : UIImageView {
     SDSelectionView *view;
-    NSString *name;
     NSUInteger pos;
 }
 
+@property (nonatomic, retain) NSString *name;
+
+- (id) initWithName: (NSString *) n;
 - (id) initWithView: (SDSelectionView *) v andName: (NSString *) n atPos: (NSUInteger) p;
 
 @end

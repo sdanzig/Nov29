@@ -9,9 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @class SDFaceView;
+@class SDMainView;
 
-@interface SDSelectionView : UIView
+@interface SDSelectionView : UIView {
+}
 
-- (void) place: (SDFaceView *) faceView atPos: (NSUInteger) pos;
+@property (nonatomic, retain) SDMainView *mainView;
+@property (nonatomic, retain) NSMutableArray *faceViews;
+
+- (id)initWithFrame:(CGRect)frame andParentView: (SDMainView *)v;
+
+- (void) placeFaceViewWithName: (NSString *) name atPos: (NSUInteger) pos;
 
 @end
