@@ -39,10 +39,11 @@
         NSEnumerator *e = [selectionView.faceViews objectEnumerator];
         SDFaceView *fv;
         while (fv = [e nextObject]) {
-            CGPoint p = [t locationInView:self];
+            CGPoint p = [t locationInView:selectionView];
             if(CGRectContainsPoint(fv.frame, p)) {
                 faceToAdd = [[SDFaceView alloc] initWithName: fv.name];
-                faceToAdd.center = p;	//Move the littleView to a new location.
+                CGPoint startPoint = [t locationInView:self];
+                faceToAdd.center = startPoint;	//Move the littleView to a new location.
                 [self addSubview:faceToAdd];
             }
         }
@@ -55,6 +56,10 @@
         CGPoint newPoint = [touch locationInView:self];
         faceToAdd.center = newPoint;
     }
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    faceToAdd = nil;
 }
 
 /*
