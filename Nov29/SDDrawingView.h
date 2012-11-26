@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SDDrawingView : UIView
+@interface SDDrawingView : UIView {
+    CGMutablePathRef path;
+}
 
 @end
