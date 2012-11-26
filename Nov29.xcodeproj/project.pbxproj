@@ -20,6 +20,9 @@
 		F4CB742316630E9A0096B7F7 /* lisa.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CB741F16630E9A0096B7F7 /* lisa.png */; };
 		F4CB742416630E9A0096B7F7 /* marisa.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CB742016630E9A0096B7F7 /* marisa.png */; };
 		F4CB742516630E9A0096B7F7 /* peter.png in Resources */ = {isa = PBXBuildFile; fileRef = F4CB742116630E9A0096B7F7 /* peter.png */; };
+		F4CB74281663158B0096B7F7 /* SDDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB74271663158B0096B7F7 /* SDDrawingView.m */; };
+		F4CB742B166315A10096B7F7 /* SDSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB742A166315A00096B7F7 /* SDSelectionView.m */; };
+		F4CB742E16631BEB0096B7F7 /* SDFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB742D16631BEB0096B7F7 /* SDFaceView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,12 @@
 		F4CB741F16630E9A0096B7F7 /* lisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lisa.png; sourceTree = "<group>"; };
 		F4CB742016630E9A0096B7F7 /* marisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marisa.png; sourceTree = "<group>"; };
 		F4CB742116630E9A0096B7F7 /* peter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peter.png; sourceTree = "<group>"; };
+		F4CB74261663158B0096B7F7 /* SDDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDrawingView.h; sourceTree = "<group>"; };
+		F4CB74271663158B0096B7F7 /* SDDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDrawingView.m; sourceTree = "<group>"; };
+		F4CB7429166315A00096B7F7 /* SDSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSelectionView.h; sourceTree = "<group>"; };
+		F4CB742A166315A00096B7F7 /* SDSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSelectionView.m; sourceTree = "<group>"; };
+		F4CB742C16631BEB0096B7F7 /* SDFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDFaceView.h; sourceTree = "<group>"; };
+		F4CB742D16631BEB0096B7F7 /* SDFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDFaceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,12 @@
 				F4CB741216630E010096B7F7 /* Default.png */,
 				F4CB741416630E010096B7F7 /* Default@2x.png */,
 				F4CB741616630E010096B7F7 /* Default-568h@2x.png */,
+				F4CB74261663158B0096B7F7 /* SDDrawingView.h */,
+				F4CB74271663158B0096B7F7 /* SDDrawingView.m */,
+				F4CB7429166315A00096B7F7 /* SDSelectionView.h */,
+				F4CB742A166315A00096B7F7 /* SDSelectionView.m */,
+				F4CB742C16631BEB0096B7F7 /* SDFaceView.h */,
+				F4CB742D16631BEB0096B7F7 /* SDFaceView.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -191,6 +206,9 @@
 			files = (
 				F4CB740D16630E000096B7F7 /* main.m in Sources */,
 				F4CB741116630E000096B7F7 /* SDAppDelegate.m in Sources */,
+				F4CB74281663158B0096B7F7 /* SDDrawingView.m in Sources */,
+				F4CB742B166315A10096B7F7 /* SDSelectionView.m in Sources */,
+				F4CB742E16631BEB0096B7F7 /* SDFaceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

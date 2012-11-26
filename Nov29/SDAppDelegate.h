@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SDAppDelegate : UIResponder <UIApplicationDelegate>
+@class SDDrawingView;
+@class SDSelectionView;
+
+@interface SDAppDelegate : UIResponder <UIApplicationDelegate> {
+    SDDrawingView *drawView;
+    SDSelectionView *selectionView;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
