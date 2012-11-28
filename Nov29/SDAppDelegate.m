@@ -8,6 +8,7 @@
 
 #import "SDAppDelegate.h"
 #import "SDMainView.h"
+#import "SDDrawingView.h"
 
 @implementation SDAppDelegate
 
@@ -19,8 +20,8 @@
     [self.window makeKeyAndVisible];
     UIScreen *screen = [UIScreen mainScreen];
     CGRect frame = screen.bounds;
-    SDMainView *mainView = [[SDMainView alloc] initWithFrame:frame];
-    [self.window addSubview:mainView];
+    self.mainView = [[SDMainView alloc] initWithFrame:frame];
+    [self.window addSubview:self.mainView];
     return YES;
 }
 
@@ -49,6 +50,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void) touchUpInside: (id) sender {
+	NSLog(@"The \"%@\" button was pressed.",
+		  [sender titleForState: UIControlStateNormal]);
+    [self.mainView.drawView clearPath];
+    [self.mainView clearFaces];
 }
 
 @end

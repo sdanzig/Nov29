@@ -25,10 +25,11 @@
         selectionFrame.size.width = selectionFrame.size.width * 0.2;
         NSLog(@"selectionFrame width = %f",selectionFrame.size.width);
         selectionFrame.origin.x = drawFrame.size.width;
-        drawView = [[SDDrawingView alloc] initWithFrame:drawFrame];
+        self.drawView = [[SDDrawingView alloc] initWithFrame:drawFrame];
         selectionView = [[SDSelectionView alloc] initWithFrame:selectionFrame andParentView:self];
-        [self addSubview:drawView];
+        [self addSubview:self.drawView];
         [self addSubview:selectionView];
+        droppedFaces = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -42,6 +43,7 @@
             CGPoint p = [t locationInView:selectionView];
             if(CGRectContainsPoint(fv.frame, p)) {
                 faceToAdd = [[SDFaceView alloc] initWithName: fv.name];
+                [droppedFaces addObject:faceToAdd];
                 CGPoint startPoint = [t locationInView:self];
                 faceToAdd.center = startPoint;	//Move the littleView to a new location.
                 [self addSubview:faceToAdd];
@@ -60,6 +62,13 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     faceToAdd = nil;
+}
+
+- (void) clearFaces {
+    for (SDFaceView *face in droppedFaces) {
+        [face removeFromSuperview];
+    }
+    [droppedFaces removeAllObjects];
 }
 
 /*

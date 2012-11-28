@@ -13,11 +13,14 @@
 @class SDFaceView;
 
 @interface SDMainView : UIView {
-    SDDrawingView *drawView;
     SDSelectionView *selectionView;
     SDFaceView *faceToAdd;
+    NSMutableArray *droppedFaces;
 }
 
+@property (nonatomic, retain) SDDrawingView *drawView;
+
 - (void) clickedOnFaceWithName: (NSString *)n andTouch:(UITouch *) t;
+- (void) clearFaces;
 
 @end

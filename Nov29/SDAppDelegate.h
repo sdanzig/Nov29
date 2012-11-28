@@ -10,9 +10,13 @@
 
 @class SDDrawingView;
 @class SDSelectionView;
+@class SDMainView;
 
 @interface SDAppDelegate : UIResponder <UIApplicationDelegate>
 
+- (void) touchUpInside: (id) sender;
+
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) SDMainView *mainView;
 
 @end

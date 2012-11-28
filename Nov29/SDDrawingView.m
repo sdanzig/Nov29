@@ -46,4 +46,10 @@
 	CGContextStrokePath(c);
 }
 
+- (void) clearPath {
+	CGPathRelease(path);
+	path = CGPathCreateMutable();
+	[self setNeedsDisplay];
+}
+
 @end

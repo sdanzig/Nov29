@@ -12,6 +12,9 @@
 @class SDMainView;
 
 @interface SDSelectionView : UIView {
+    UIButton *button;
+    CGFloat hPerPos;
+    CGSize selViewSize;
 }
 
 @property (nonatomic, retain) SDMainView *mainView;
